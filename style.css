@@ -1,0 +1,45 @@
+body {
+    background-color: #0f172a;
+    color: #f1f5f9;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.bento-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 150px;
+    gap: 16px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 24px;
+    border: 1px solid #334155;
+}
+
+/* Specific Grid Placements */
+.lesson-card { grid-column: span 3; grid-row: span 2; }
+.progress-card { grid-column: span 1; }
+.quiz-card { grid-column: span 2; }
+.history-card { grid-column: span 1; grid-row: span 2; }
+.leaderboard-card { grid-column: span 2; }
+
+/* Styling refinements */
+h2, h3 { margin-top: 0; color: #38bdf8; }
+button {
+    background: #38bdf8;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    color: #0f172a;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+}
+button:hover { background: #7dd3fc; }
